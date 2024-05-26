@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">NEWtech Predictions</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Sales Data</a></li>
+                <li><a href="#" class="active">Add Predictions</a></li>
+                <li><a href="#">Prediction History</a></li>
+                <li><a href="#">My Profile</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="logout">Logout</a>
+    </div>
+    <div class="content">
+        <header>
+            <div class="user-profile">
+                <span>Miles Morales</span>
+                <img src="profile-pic.png" alt="User Profile Picture">
+            </div>
+        </header>
+        <main>
+            <h1>ADD NEW PREDICTIONS</h1>
+            <div class="form-container">
+                <form>
+                    <fieldset>
+                        <legend>1. Item MRP:</legend>
+                        <input type="text" name="item_mrp">
+                    </fieldset>
+                    <fieldset>
+                        <legend>2. Outlet ID:</legend>
+                        <input type="text" name="outlet_id">
+                    </fieldset>
+                    <fieldset>
+                        <legend>3. Outlet Size:</legend>
+                        <label><input type="radio" name="outlet_size" value="High"> High</label>
+                        <label><input type="radio" name="outlet_size" value="Medium"> Medium</label>
+                        <label><input type="radio" name="outlet_size" value="Small"> Small</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>4. Outlet Type:</legend>
+                        <label><input type="radio" name="outlet_type" value="Grocery Store"> Grocery Store</label>
+                        <label><input type="radio" name="outlet_type" value="SuperMarket Type 1"> SuperMarket Type 1</label>
+                        <label><input type="radio" name="outlet_type" value="SuperMarket Type 2"> SuperMarket Type 2</label>
+                        <label><input type="radio" name="outlet_type" value="SuperMarket Type 3"> SuperMarket Type 3</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>5. Outlet Establishment Year:</legend>
+                        <input type="text" name="outlet_establishment_year">
+                    </fieldset>
+                    <button type="submit">SUBMIT</button>
+                </form>
+                <div class="results">
+                    <h2>RESULTS</h2>
+                    <div class="result-box">
+                        <h3>1. Sales Amount between</h3>
+                        <p>$1845.71</p>
+                        <p>and</p>
+                        <p>$2154.89</p>
+                    </div>
+                    <div class="result-box">
+                        <h3>2. Is the Item Profitable?</h3>
+                        <p>Yes!</p>
+                    </div>
+                    <img src="keep-up-the-good-work.png" alt="Keep Up The Good Work">
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+
+        <p>All the copyrights reserved 2024 &copy; Maribel Mendez and Hector Macias.                                 . </p>
+    </footer>
+</body>
+</html>
