@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /*NEW*/
     height: 100vh;
 }
 
@@ -24,11 +23,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
+
     top: 0;
     left: 0;
-    height: 100%;
-    width: 200px;
+    height:auto;
+    width: 170px;
+     /*z-index: 1000; Asegura que la barra lateral esté en la parte superior */
+    /*overflow-y: auto; /* Permitir scroll interno si el contenido es demasiado grande */
+
 }
 
 .logo {
@@ -43,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 nav ul li a {
@@ -64,23 +66,17 @@ nav ul li a.active {
 }
 
 .content {
-    /*
-    padding: 20px;
-    padding-left: 270px; /* Ensure space for sidebar */
-   /* background-color: #f4f4f4;
-    overflow-y: auto;
 
-    ////////
-    flex-grow: 1;
-    padding: 20px;
-    padding-bottom: 100px;
-    background-color: #f4f4f4;
-     */
-    flex-grow: 1;
+    /*flex-grow: 1;
     padding: 20px;
     padding-left: 270px;
     padding-bottom: 100px;
+    background-color: #f4f4f4;*/
+    flex-grow: 1;
+    padding: 20px;
+    /*padding-left: 270px; /* Asegura espacio para la barra lateral */
     background-color: #f4f4f4;
+    overflow-y: auto; /* Permitir scroll interno */
 }
 
 
@@ -184,7 +180,7 @@ form {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -337,5 +333,76 @@ img {
     bottom: 0;
     width: 100%;
     /*width: calc(100% - 200px); /* Adjust for sidebar */
-    left: 240px; /* Align next to sidebar */
+    left: 210px; /* Align next to sidebar */
+}
+ .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    align-content: center;
+ }
+.login-header {
+    background-color: #2A2A8E;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.login-header img {
+    width: 30px;
+    vertical-align: middle;
+}
+.login-header h2 {
+    display: inline;
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.login-form {
+    padding: 20px;
+}
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.login-form .icon-input {
+    position: relative;
+}
+.login-form .icon-input img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding-left: 40px;
+}
+.login-form .forgot-password {
+    color: #3136AC;
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.login-form .signup-option {
+    text-align: center;
+    margin-top: 10px;
+}
+.login-form .signup-option a {
+    color: #3136AC;
+    text-decoration: none;
 }
