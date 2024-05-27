@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-header">
+             <div class="logo">NEWtech Predictions</div>
+        </div>
+        <div class="login-form">
+            <h2>Sign In</h2>
+                <div class="form-section">
+                <div class="icon-input">
+                     <img src="img/email.png"  alt="Email Icon">
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+                <div class="icon-input">
+                    <img src="img/pw.png"  alt="Password Icon">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="submit">Log In</button>
+              <div class="signup-option">
+                or </div>
+            <div class="signup-option">
+                 <a href="{% url 'signup' %}">Sign Up</a>
+            </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
