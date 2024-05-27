@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+             <div class="logo">NEWtech Predictions</div>
+        </div>
+        <div class="login-form">
+            <h2>Sign Up</h2>
+
+                <div class="form-section">
+                    <div class="icon-input">
+                        <legend>First Name</legend>
+                        <input type="text" name="first_name" placeholder="First Name">
+                    </div>
+                    <div class="icon-input">
+                         <legend>Last Name</legend>
+                        <input type="text" name="Last_name" placeholder="Last Name">
+                     </div>
+                    <div class="icon-input">
+                         <legend>Email</legend>
+                        <input type="text" name="Email" placeholder="Email">
+                    </div>
+                    <div class="icon-input">
+                         <legend>Password</legend>
+                        <input type="password" name="password" placeholder="Password (6 or more characters)">
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <div class="signup-option">
+                         Already have an account?<a href="{% url 'login' %}">Sign In</a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
