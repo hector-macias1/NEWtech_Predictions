@@ -7,16 +7,7 @@ body {
 }
 
 .sidebar {
-    /*background-color: #2A2A8E;
-    color: white;
-    width: 250px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
 
-     */
     background-color: #2A2A8E;
     color: white;
     padding: 20px;
@@ -28,15 +19,13 @@ body {
     left: 0;
     height:auto;
     width: 170px;
-     /*z-index: 1000; Asegura que la barra lateral esté en la parte superior */
-    /*overflow-y: auto; /* Permitir scroll interno si el contenido es demasiado grande */
 
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 40px;
+    color: white;
 }
 
 nav ul {
@@ -371,7 +360,7 @@ img {
 }
 .login-form input[type="text"],
 .login-form input[type="password"] {
-    width: 100%;
+    width: 200px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -396,6 +385,17 @@ img {
     display: block;
     text-align: right;
     margin-bottom: 20px;
+}
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2A2A8E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;  /* Añadir esta línea */
+    display: block;  /* Añadir esta línea */
 }
 
 .login-form .signup-option {
