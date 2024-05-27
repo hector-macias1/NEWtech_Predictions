@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Predictions</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Add New Predictions</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
 </head>
 <body>
-    <div class="sidebar">
+    <div class="d-flex">
+        <div id="sidebar-container" class="bg-primary">
         <div class="logo">NEWtech Predictions</div>
-        <nav>
-            <ul>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#">New Sales Data</a></li>
-                <li><a href="#" class="active">Add Predictions</a></li>
-                <li><a href="#" >Prediction History</a></li>
-                <li><a href="#">My Profile</a></li>
-            </ul>
-        </nav>
+        <div class="menu">
+            <a href="#" class="d-block text-light p-3 border-0"><i class="bi bi-house-door"></i>
+                Home</a>
+
+            <a href="#" class="d-block text-light p-3 border-0"><i class="bi bi-bar-chart"></i>
+                New Sales Data</a>
+
+            <a href="#" class="d-block text-light p-3 border-0 active"><i class="bi bi-plus-circle-fill"></i>
+                Add Predictions</a>
+            <a href="#" class="d-block text-light p-3 border-0 "><i class="bi bi-list-ul"></i>
+                Prediction History</a>
+        </div>
         <a href="#" class="logout">Logout</a>
+        </div>
     </div>
+
     <div class="content">
         <header>
             <div class="user-profile">
@@ -33,7 +52,8 @@
                 <form>
                     <fieldset>
                         <legend>1. Item MRP:</legend>
-                        <input type="text" name="item_mrp">
+                        <input type="number" name="mrp" step="0.01">
+
                     </fieldset>
                     <fieldset>
                         <legend>2. Outlet ID:</legend>
@@ -54,7 +74,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>5. Outlet Establishment Year:</legend>
-                        <input type="text" name="outlet_establishment_year">
+                        <input type="number" name="establishment_year" min="1900" max="2024">
+
                     </fieldset>
                     <button type="submit">SUBMIT</button>
                 </form>
