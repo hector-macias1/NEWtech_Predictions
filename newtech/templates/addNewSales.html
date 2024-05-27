@@ -58,7 +58,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>2. Weight:</legend>
-                            <input type="text" name="weight">
+                             <input type="number" name="weight" step="0.01">
                         </fieldset>
                         <fieldset>
                             <legend>3. Fat Content:</legend>
@@ -66,8 +66,9 @@
                             <label><input type="radio" name="fat_content" value="Regular"> Regular</label>
                         </fieldset>
                         <fieldset>
-                            <legend>4. Visibility:</legend>
-                            <input type="text" name="visibility">
+                            <legend>4. Visibility (%):</legend>
+                            <input type="number" name="visibility" min="0" max="100" step="0.01">
+
                         </fieldset>
                         <fieldset>
                             <legend>5. Type:</legend>
@@ -83,7 +84,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>6. MRP:</legend>
-                            <input type="text" name="mrp">
+                            <input type="number" name="mrp" step="0.01">
                         </fieldset>
 
                     </div>
@@ -97,7 +98,8 @@
                         </fieldset>
                         <fieldset>
                             <legend>8. Establishment Year:</legend>
-                            <input type="text" name="establishment_year">
+                            <input type="number" name="establishment_year" min="1900" max="2024">
+
                         </fieldset>
                         <fieldset>
                             <legend>9. Size:</legend>
