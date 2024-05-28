@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
      <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -17,22 +19,26 @@
             <h2>Sign In</h2>
                 <div class="form-section">
                 <div class="icon-input">
-                     <img src="img/email.png"  alt="Email Icon">
-                    <input type="text" name="email" placeholder="Email">
-                </div>
-                <div class="icon-input">
-                    <img src="img/pw.png"  alt="Password Icon">
-                    <input type="password" name="password" placeholder="Password">
-                </div>
-                <a href="#" class="forgot-password">Forgot password?</a>
-                <button type="submit">Log In</button>
-              <div class="signup-option">
-                or </div>
-            <div class="signup-option">
-                 <a href="{% url 'signup' %}">Sign Up</a>
-            </div>
+                        <img src="img/email.png" alt="Email Icon">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="      Email" required>
+                        <div class="invalid-feedback">Please enter your email.</div>
+                    </div>
+                    <div class="icon-input">
+                        <img src="img/pw.png" alt="Password Icon">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <div class="invalid-feedback">Please enter your password.</div>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                    <div class="signup-option">
+                        or
+                    </div>
+                    <div class="signup-option">
+                        <a href="Signup.html">Sign Up</a>
+                    </div>
                 </div>
         </div>
     </div>
+
 </body>
 </html>
