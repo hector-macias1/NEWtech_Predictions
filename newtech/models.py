@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Item(models.Model):
+    """
+    Representa un item que servira para aniadir sales
+
+    """
     item_id = models.CharField(max_length=50)
     weight = models.FloatField()
     fat_content = models.CharField(max_length=50)
@@ -14,6 +18,10 @@ class Item(models.Model):
         return self.item_id
 
 class Outlet(models.Model):
+    """
+    Representa un outlet que servira para aniadir sales
+    """
+
     outlet_id = models.CharField(max_length=50)
     establishment_year = models.IntegerField()
     size = models.CharField(max_length=50)
@@ -24,6 +32,10 @@ class Outlet(models.Model):
         return self.outlet_id
 
 class Sale(models.Model):
+    """
+    Una venta que se aniadira a al modelo de datos
+    """
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     outlet = models.ForeignKey(Outlet, on_delete=models.CASCADE)
@@ -33,6 +45,9 @@ class Sale(models.Model):
         return f"Sale of {self.item.item_id} at {self.outlet.outlet_id}"
 
 class Prediction(models.Model):
+    """
+    Prediccion que se hara
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     item_mrp = models.FloatField()
