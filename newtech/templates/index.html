@@ -22,7 +22,7 @@
 <body>
     <div class="d-flex">
         <div id="sidebar-container" class="bg-primary">
-        <div class="logo">NEWtech Predictions</div>
+        <div class="logo"><i class="bi bi-circle"></i><span> NEWtech <br>Predictions</span></div>
         <div class="menu">
             <a href="index.html" class="d-block text-light p-3 border-0 active"><i class="bi bi-house-door-fill"></i>
                 Home</a>
@@ -33,9 +33,11 @@
             <a href="addNewPredictions.html" class="d-block text-light p-3 border-0"><i class="bi bi-plus-circle"></i>
                 Add Predictions</a>
             <a href="history.html" class="d-block text-light p-3 border-0"><i class="bi bi-list-ul"></i>
-                Predictions History</a>
+                Prediction History</a>
         </div>
-        <a href="Signin.html" class="logout">Logout</a>
+            <div class="menu-footer">
+                <a href="Signin.html" class="d-block text-light p-3 border-0"><i class="bi bi-box-arrow-right"></i>  Logout</a>
+            </div>
         </div>
     </div>
 
@@ -47,29 +49,77 @@
             </div>
         </header>
         <main>
-            <h1>HOME</h1>
+            <h1><b>Home</b></h1>
+            <div style="display: flex;">
+                <div style="width: 50%;">
+                    <div class="grid-container" style="grid-template-rows: 1fr">
+                        <div class="grid-item">
+                            <h3>Purpose</h3>
+                            <p style="text-align: justify">NEWtech Predictions™ utilizes big data analytics to predict the profitability of products in supermarkets,
+                                providing invaluable insights for decision-making processes within organizations. By analyzing vast
+                                datasets encompassing various sources such as sales transactions, customer demographics, seasonal trends,
+                                promotional activities, and competitor analyses, our system identifies hidden patterns and correlations
+                                to forecast the profitability of individual products.</p>
+                        </div>
+                        <div class="grid-item">
+                            <div class="image-with-text">
+                                <img src="img/salePredict.png" alt="salePredict">
+                                <div>
+                                    <h3>How it Helps Organizations Improve Decision-Making:</h3>
+                                    <ul style="text-align: justify">
+                                        <li><b>Enhanced Product Management:</b> By accurately predicting the profitability of products, supermarkets
+                                            can optimize their inventory management strategies, ensuring adequate stock levels of high-profit
+                                            items while minimizing wastage of slow-moving products.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul style="text-align: justify">
+                                <li><b>Strategic Pricing Decisions: </b>Insights derived from the application enable supermarkets to make informed
+                                    pricing decisions, identifying the optimal pricing points that maximize profitability without sacrificing competitiveness.<br><br></li>
+                                <li><b>Targeted Marketing Campaigns: </b>Understanding which products are likely to yield higher profits allows
+                                    organizations to tailor their marketing campaigns effectively, targeting specific customer segments and promoting
+                                    products with the highest profit potential.</li>
+                            </ul>
+                        </div>
+                        <!--<div class="grid-item">
+                            <h3>What is Big Data?</h3>
+                            <p>Big Data refers to the large volumes of data that are collected, stored, and analyzed to reveal patterns and trends, especially relating to human behavior and interactions. It is used to make better decisions and strategic business moves.</p>
+                        </div>-->
+                    </div>
+                </div>
+                <div style="width: 50%;">
 
-        <div class="grid-container">
-            <div class="grid-item">
-                <h3>Purpose</h3>
-                <p>This page provides an overview of the system for predicting sales and managing inventory in supermarkets using Big Data technology.</p>
+                    <div class="grid-container" style="grid-template-rows: 1fr; margin-left: 15px;">
+                        <div class="grid-item">
+                            <div class="image-with-text">
+                                <img src="img/bigdata.png" alt="bigdata">
+                                <div>
+                                    <h3>What is Big Data?</h3>
+                                    <p style="text-align: justify">Big data refers to the vast volume, variety, and speed of data that organizations collect and analyze to gain
+                                        insights and make informed decisions. It encompasses large datasets that exceed the capacity of traditional data
+                                        processing methods and requires specialized tools and techniques for storage, processing, and analysis. Big data
+                                        often involves structured and more disorganized data from various sources, including social media, sensors, transactions,
+                                        and more.</p>
+                                </div>
+                            </div>
+                                <p style="text-align: justify">Big Data is present in many fields:</p>
+                                <ul style="text-align: justify">
+                                    <li><b>Retail: </b>Big data is used for customer segmentation, personalized marketing, demand forecasting, inventory optimization, and pricing optimization.<br><br></li>
+                                    <li><b>Healthcare: </b>Applications include patient monitoring, predictive analytics for disease outbreaks, personalized medicine, fraud detection, and clinical decision support systems.<br><br></li>
+                                    <li><b>Finance: </b>Big data is utilized for risk management, fraud detection, algorithmic trading, customer analytics, and credit scoring.<br><br></li>
+                                    <li><b>Telecomms: </b>Big data is used for network optimization, customer churn prediction, targeted marketing, and fraud detection.<br><br></li>
+                                    <li><b>Energy: </b>Big data is utilized for smart grid management, predictive maintenance for infrastructure, energy consumption optimization, and renewable energy forecasting.</li>
+                                </ul>
+                    </div>
+                </div>
             </div>
-            <div class="grid-item">
-                  <img src="img/salePredict.png" alt="salePredict">
-            </div>
-            <div class="grid-item">
-                  <img src="img/bigdata.png" alt="bigdata">
-            </div>
-            <div class="grid-item">
-                <h3>What is Big Data?</h3>
-                <p>Big Data refers to the large volumes of data that are collected, stored, and analyzed to reveal patterns and trends, especially relating to human behavior and interactions. It is used to make better decisions and strategic business moves.</p>
-            </div>
-        </div>
+
+
         </main>
     </div>
 
     <footer class="footer">
-        <p>All the copyrights reserved 2024 &copy; Maribel Mendez and Hector Macias. </p>
+        <p>All copyrights reserved 2024 &copy; Maribel Mendez and Hector Macias. </p>
     </footer>
 </body>
 </html>
