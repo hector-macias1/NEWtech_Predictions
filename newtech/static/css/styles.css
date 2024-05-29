@@ -6,10 +6,6 @@
 
 body {
     display: flex;
-
-    justify-content: center; /* Centrar horizontalmente */
-
-
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -29,25 +25,6 @@ body {
     height:auto;
     width: 250px;
 
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px; /* Añade margen inferior para espaciado */
-}
-
-.menu-footer {
-    margin-top: auto; /* Empuja el contenido hacia la parte inferior */
-}
-
-.logout {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block; /* Asegura que el enlace ocupe toda la anchura */
-    padding: 10px 0; /* Añade relleno para mejor apariencia */
 }
 
 .bg-primary {
@@ -358,7 +335,7 @@ img {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     /*grid-template-rows: 1fr 1fr;
    */ gap: 20px;
 }
@@ -387,13 +364,12 @@ img {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 25px;
     /*width: calc(100% - 200px); /* Adjust for sidebar */
     left: 250px; /* Align next to sidebar */
 }
  .login-container {
-    width: 350px;
-    margin: 220px auto;
+    width: 300px;
+    margin: 100px auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -473,38 +449,3 @@ img {
     color: #3136AC;
     text-decoration: none;
 }
-
-/*referente a banners*/
-
-.wrapper { width: 30%;
-    margin: 0 auto; }
-
-.banner p {
-  text-align: center;
-  color: #aaa;
-  margin-top: -10px;
-  display: block;
- }
-
-.banner img {
-  float: left;
-    margin: 5px;
- }
- .banner span {
-  padding-top: 50px;
-  vertical-align:top;
- }
-  .banner .ban2 span {
-  padding-top: 50px;
-  vertical-align:top;
- }
-
-.image-with-text {
-    display: flex;
-    align-items: center; /* Para alinear verticalmente */
-}
-
-.image-with-text img {
-    margin-right: 10px; /* Para añadir un poco de espacio entre la imagen y el texto */
-}
-

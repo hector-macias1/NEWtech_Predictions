@@ -22,7 +22,7 @@
 <body>
     <div class="d-flex">
         <div id="sidebar-container" class="bg-primary">
-        <div class="logo">NEWtech Predictions</div>
+        <div class="logo"><i class="bi bi-circle"></i><span> NEWtech <br>Predictions</span></div>
         <div class="menu">
             <a href="index.html" class="d-block text-light p-3 border-0"><i class="bi bi-house-door"></i>
                 Home</a>
@@ -35,7 +35,9 @@
             <a href="history.html" class="d-block text-light p-3 border-0 "><i class="bi bi-list-ul"></i>
                 Prediction History</a>
         </div>
-        <a href="Signin.html" class="logout">Logout</a>
+            <div class="menu-footer">
+                <a href="Signin.html" class="d-block text-light p-3 border-0"><i class="bi bi-box-arrow-right"></i>  Logout</a>
+            </div>
         </div>
     </div>
 
@@ -47,9 +49,9 @@
             </div>
         </header>
         <main>
-            <h1>ADD NEW PREDICTIONS</h1>
+            <h1><b>Add new predictions</b></h1>
             <div class="form-container">
-                <form>
+                <form style="margin-bottom: 40px">
                     <fieldset>
                         <legend>1. Item MRP:</legend>
                         <input type="number" name="mrp" step="0.01">
@@ -79,7 +81,7 @@
                     </fieldset>
                     <button type="submit">SUBMIT</button>
                 </form>
-                <div class="results">
+                <div class="results" style="margin-left: 20px; margin-bottom: 40px">
                     <h2>RESULTS</h2>
                     <div class="result-box">
                         <h3>1. Sales Amount between</h3>
@@ -97,8 +99,7 @@
         </main>
     </div>
     <footer class="footer">
-
-        <p>All the copyrights reserved 2024 &copy; Maribel Mendez and Hector Macias.                                 . </p>
+        <p>All copyrights reserved 2024 &copy; Maribel Mendez and Hector Macias. </p>
     </footer>
 </body>
 </html>
